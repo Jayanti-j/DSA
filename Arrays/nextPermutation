@@ -1,0 +1,22 @@
+#include<iostream>
+int main(){
+    //For 1 element
+    int n=5;
+    int c=1;
+    long long res=1;
+    for(int i=0;i<c;i++){
+        res=res*(n-i);
+        res=res/(i+1);
+    }
+    std::cout<<res<<" ";
+
+    //For 1 line
+    res=1;
+    for(int i=1;i<n;i++){
+        std::cout<<res<<" ";
+        res=res*(n-i);
+        res=res/i;
+    }
+    std::cout<<res<<" ";
+    //
+}
